@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie formularz</title>
+    <link rel="Stylesheet" href="css.css">
+</head>
+<body>
+    <form action="https://formspree.io/krystiantryba123@gmail.com" method="POST">
+        <h1>Wypełnij formularz</h1>
+        <input type="text" placeholder="Imie"  name="imie">
+        <input type="text" placeholder="Nazwisko" name="nazwisko">
+        <input type="email" placeholder="E-mail" name="mail">
+        <input type="number" placeholder="Wpisz numer telefonu" name="tel">
+        <p>Wybierz miasto :</p>
+        <select name="miasto" >
+            <option>Kraków</option>
+            <option>Warszawa</option>
+            <option>Gdańsk</option>
+        </select>
+        <P>Jaka płeć:</P>
+        <label for="wybór">Męska:</label>
+        <input type="radio" name="płeć" id="wybór">
+        <label for="wybór2">Żeńska:</label>
+        <input type="radio" name="płeć" id="wybór2">
+        <label for="zgoda">Wyrażam zgode na przetwarzanie danych:</label>
+        <input type="checkbox" name="zgoda" id="zgoda">
+        <textarea name="text" maxlength="100"></textarea>
+    
+        <input type="submit" value="wyślij">
+    </form>
+</body>
+</html>
